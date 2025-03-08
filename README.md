@@ -1,6 +1,8 @@
 # Fuel Quota Management System
 
 A comprehensive solution for managing fuel quotas with a React frontend, Spring Boot backend, and Flutter mobile application.
+(Designed to manage fuel quota of vehicles online due to the fuel shortage crisis in Srilanka during COVID-19 virus)
+
 
 ## Project Overview
 
