@@ -10,7 +10,7 @@ This system helps manage and track fuel quotas for vehicles, allowing users to:
 - Register vehicles and users
 - Allocate and track fuel quotas
 - Monitor fuel consumption
-- Generate reports and analytics
+- Display reports and analytics
 
 ## Repository Structure
 
@@ -24,7 +24,6 @@ This repository contains three main components:
 
 ### Frontend (Web)
 - React.js
-- Redux for state management
 - Material-UI for components
 - Axios for API communication
 
