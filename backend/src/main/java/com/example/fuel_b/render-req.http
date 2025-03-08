@@ -1,0 +1,162 @@
+###
+POST https://fuelsystem-b.onrender.com/api/employees/register
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjEiLCJpYXQiOjE3MzYwNTcwMzksImV4cCI6MTczNjY2MTgzOX0.-u3jRBDRLrANPDPf2rd1BEL_93Jhz0dNrlrZKQf1JQNKNURHRLzuO5CBmkEBOfyV82G4RKRuM8L0y_S5rBIBuA
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "user"
+}
+
+###
+POST https://fuelsystem-b.onrender.com/api/employees/login
+Content-Type: application/json
+
+{
+  "username": "admin1",
+  "password": "123"
+}
+
+<> 2025-01-05T112537.200.json
+<> 2025-01-04T222851.200.json
+<> 2025-01-04T221329.200.json
+<> 2025-01-03T205614.200.json
+<> 2025-01-03T205439.200.json
+<> 2025-01-03T205410.200.json
+<> 2025-01-03T205238.200.json
+<> 2025-01-03T204959.200.json
+<> 2025-01-01T115724.200.json
+<> 2024-12-31T110425.401.txt
+
+
+###
+###
+POST https://fuelsystem-b.onrender.com/api/employees/scan-qr
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjEiLCJpYXQiOjE3MzU5MTc5NzQsImV4cCI6MTczNjUyMjc3NH0.gF7HvfRLl0_2Z5pk8n1U21kGPCkHUwlK5jdgU_VTxUzBe21i1KKl5Iq9vbsJSM5XCZLywfhdD0Zkco05Q79VuQ
+
+
+{
+  "qrCode": "iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6AQAAAACgl2eQAAAA00lEQVR4Xu3SUQ7CMAwD0Nw8OdpuVmo7HWgCLuBYo6zJ+7IW63+ueE4eGaAMUAYoAxQvUMEk3/J9swO8FFa5z745Aq2WirpvrqAi8W4PFh9n0KzJe2YGgkmWhJp48wN31M5HvACrQUG5uqts6gVI9pI/sZ57gWJLqmp3FGftBjbRGH/xpSgToHVhhR0fGS9wgvEBmngBfCX4ULjBwa/GEPDGDd6K1BLsahInDjhCY8Bs0XtbgB3OEzfQDDCkhMwAxqoKGz2G4HcGKAOUAcoAZYByvQDS+OuUar2juwAAAABJRU5ErkJggg=="
+}
+
+<> 2025-01-03T205630.200.json
+<> 2025-01-03T205308.200.json
+<> 2025-01-03T205140.200.json
+<> 2025-01-03T205127.200.json
+
+
+###
+POST https://fuelsystem-b.onrender.com/api/admins/register
+Content-Type: application/json
+
+{
+  "username": "admin2",
+  "password": "123"
+}
+
+###
+PUT https://fuelsystem-b.onrender.com/api/employees/{{id}}/update-quota
+Content-Type: application/json
+
+{
+
+}
+
+###
+POST https://fuelsystem-b.onrender.com/api/fuel-stations/register
+Content-Type: application/json
+
+{
+  "name": "b",
+  "address": "b",
+  "phoneNumber": "a",
+  "password": "123"
+}
+
+<> 2025-01-05T100859.200.json
+<> 2025-01-04T171114.200.json
+
+###
+POST https://fuelsystem-b.onrender.com/api/fuel-stations/login
+Content-Type: application/json
+
+{
+  "name": "a",
+  "password": "123"
+}
+
+<> 2025-01-05T112414.200.json
+<> 2025-01-05T112017.200.json
+<> 2025-01-05T112014.200.json
+<> 2025-01-05T111703.200.json
+<> 2025-01-05T103019.200.json
+<> 2025-01-04T221312.200.json
+<> 2025-01-04T171141.200.json
+
+###
+POST https://fuelsystem-b.onrender.com/api/fuel-stations/employees/register
+Content-Type: application/json
+
+{
+  "username": "admin1",
+  "password": "123",
+  "fuelStation": {
+    "id": 1
+  }
+}
+
+<> 2025-01-05T103012.200.json
+<> 2025-01-04T221210.200.json
+
+###
+POST https://fuelsystem-b.onrender.com/api/transactions/add
+Content-Type: application/json
+
+{
+  "pumpedAmount": 4,
+  "employee": {
+    "id": 1
+  },
+  "fuelStation": {
+    "id": 1
+  }
+}
+
+
+<> 2025-01-05T112700.200.json
+<> 2025-01-04T224353.200.json
+<> 2025-01-04T222705.200.json
+<> 2025-01-04T221958.200.json
+
+###
+GET https://fuelsystem-b.onrender.com/api/transactions/total-pumped/1
+//Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjEiLCJpYXQiOjE3MzYwMDk5MzEsImV4cCI6MTczNjYxNDczMX0.XPvyw9wLjv3hOwSImZRnNAJ1IRm2UDgJTAfZq1xbv2zRGmrpLqve4kKhA0qBQlpPnZZjytJB_v7RAdygmxBZRw
+
+<> 2025-01-04T222940.200.json
+<> 2025-01-04T222912.200.json
+<> 2025-01-04T222712.200.json
+<> 2025-01-04T222648.200.json
+
+###
+
+
+POST https://fuelsystem-b.onrender.com/api/vehicles/register
+Content-Type: application/json
+
+{
+  "registrationNumber": "1",
+  "engineNumber": "1",
+  "model": "a",
+  "ownerName": "a"
+}
+###
+
+POST https://fuelsystem-b.onrender.com/api/vehicles/login
+Content-Type: application/json
+
+{
+"registrationNumber": "2",
+"engineNumber": "2"
+
+}

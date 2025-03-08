@@ -1,0 +1,83 @@
+All http endpoints in this application with their uses
+
+
+
+Here are the endpoints in the `AdminController` file along with their functionalities:
+
+1. **POST https://fuelsystem-b.onrender.com/api/admins/register**
+   - **Functionality**: Registers a new admin.
+   - **Method**: `registerAdmin`
+   - **Request Body**: `Admin` object
+
+2. **POST https://fuelsystem-b.onrender.com/api/admins/login**
+   - **Functionality**: Logs in an admin and returns a JWT token if the credentials are valid.
+   - **Method**: `loginAdmin`
+   - **Request Body**: `Admin` object
+
+
+Here are the endpoints in the `EmployeeController` file along with their functionalities:
+
+3. **POST https://fuelsystem-b.onrender.com/api/employees/register**
+   - **Functionality**: Registers a new employee.
+   - **Method**: `registerEmployee`
+   - **Request Body**: `Employee` object
+
+4. **POST https://fuelsystem-b.onrender.com/api/employees/login**
+   - **Functionality**: Logs in an employee and returns a JWT token if the credentials are valid.
+   - **Method**: `loginEmployee`
+   - **Request Body**: `Employee` object
+
+5. **POST https://fuelsystem-b.onrender.com/api/employees/scan-qr**
+   - **Functionality**: Retrieves vehicle information based on a scanned QR code.
+   - **Method**: `getVehicleByQRCode`
+   - **Request Body**: Map with `qrCode` key
+
+6. **PUT https://fuelsystem-b.onrender.com/api/employees/{id}/update-quota**
+   - **Functionality**: Updates the weekly quota for a vehicle.
+   - **Method**: `updateWeekQuota`
+   - **Path Variable**: `id` (Vehicle ID)
+   - **Request Body**: Map with `pumpedAmount` key
+
+
+Here are the endpoints in the `FuelStationController` file along with their functionalities:
+
+7. **POST https://fuelsystem-b.onrender.com/api/fuel-stations/register**
+   - **Functionality**: Registers a new fuel station.
+   - **Method**: `registerFuelStation`
+   - **Request Body**: `FuelStation` object
+
+8. **POST https://fuelsystem-b.onrender.com/api/fuel-stations/login**
+   - **Functionality**: Logs in a fuel station and returns a JWT token if the credentials are valid.
+   - **Method**: `loginFuelStation`
+   - **Request Body**: `FuelStation` object
+
+9. **POST https://fuelsystem-b.onrender.com/api/fuel-stations/employees/register**
+   - **Functionality**: Registers a new employee for a fuel station.
+   - **Method**: `registerEmployee`
+   - **Request Body**: `Employee` object
+
+
+Here are the endpoints in the `TransactionController` file along with their functionalities:
+
+10. **POST https://fuelsystem-b.onrender.com/api/transactions/add**
+   - **Functionality**: Adds a new transaction.
+   - **Method**: `addTransaction`
+   - **Request Body**: `Transaction` object
+
+11. **GET https://fuelsystem-b.onrender.com/api/transactions/total-pumped/{fuelStationId}**
+   - **Functionality**: Retrieves the total pumped amount for a specific fuel station.
+   - **Method**: `getTotalPumpedAmount`
+   - **Path Variable**: `fuelStationId` (Fuel Station ID)
+
+
+Here are the endpoints in the `VehicleController` file along with their functionalities:
+
+12. **POST https://fuelsystem-b.onrender.com/api/vehicles/register**
+   - **Functionality**: Registers a new vehicle.
+   - **Method**: `registerVehicle`
+   - **Request Body**: `Vehicle` object
+
+13. **POST https://fuelsystem-b.onrender.com/api/vehicles/login**
+   - **Functionality**: Logs in a vehicle and returns a JWT token if the credentials are valid.
+   - **Method**: `loginVehicle`
+   - **Request Body**: `Vehicle` object

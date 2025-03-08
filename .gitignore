@@ -1,0 +1,110 @@
+# Common
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+logs/
+tmp/
+temp/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# React Frontend
+# dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# testing
+/frontend/coverage
+
+# production
+/frontend/build
+
+# misc
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Spring Boot Backend
+/backend/HELP.md
+/backend/target/
+/backend/!.mvn/wrapper/maven-wrapper.jar
+/backend/!**/src/main/**/target/
+/backend/!**/src/test/**/target/
+
+# STS
+/backend/.apt_generated
+/backend/.classpath
+/backend/.factorypath
+/backend/.project
+/backend/.settings
+/backend/.springBeans
+/backend/.sts4-cache
+
+# Maven
+/backend/.mvn/
+/backend/mvnw
+/backend/mvnw.cmd
+
+# Gradle
+/backend/.gradle
+/backend/build/
+/backend/!gradle/wrapper/gradle-wrapper.jar
+/backend/!**/src/main/**/build/
+/backend/!**/src/test/**/build/
+
+# Flutter Mobile
+# Dart/Flutter specific
+/mobile/.dart_tool/
+/mobile/.flutter-plugins
+/mobile/.flutter-plugins-dependencies
+/mobile/.packages
+/mobile/.pub-cache/
+/mobile/.pub/
+/mobile/build/
+/mobile/coverage/
+
+# Android related
+/mobile/android/app/debug
+/mobile/android/app/profile
+/mobile/android/app/release
+/mobile/android/gradle-wrapper.jar
+/mobile/android/.gradle
+/mobile/android/captures/
+/mobile/android/gradlew
+/mobile/android/gradlew.bat
+/mobile/android/local.properties
+/mobile/android/**/GeneratedPluginRegistrant.*
+
+# iOS/XCode related
+/mobile/ios/**/*.mode1v3
+/mobile/ios/**/*.mode2v3
+/mobile/ios/**/*.moved-aside
+/mobile/ios/**/*.pbxuser
+/mobile/ios/**/*.perspectivev3
+/mobile/ios/**/*sync/
+/mobile/ios/**/.sconsign.dblite
+/mobile/ios/**/.tags*
+/mobile/ios/**/.vagrant/
+/mobile/ios/**/DerivedData/
+/mobile/ios/**/Icon?
+/mobile/ios/**/Pods/
+/mobile/ios/**/.symlinks/
+/mobile/ios/**/profile
+/mobile/ios/**/xcuserdata
+/mobile/ios/.generated/
+/mobile/ios/Flutter/App.framework
+/mobile/ios/Flutter/Flutter.framework
+/mobile/ios/Flutter/Generated.xcconfig
+/mobile/ios/Flutter/app.flx
+/mobile/ios/Flutter/app.zip
+/mobile/ios/Flutter/flutter_assets/
+/mobile/ios/Flutter/flutter_export_environment.sh
+/mobile/ios/ServiceDefinitions.json
+/mobile/ios/Runner/GeneratedPluginRegistrant.* 
